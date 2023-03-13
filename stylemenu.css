@@ -5,11 +5,11 @@
 
       header {
        
-        padding:   0 10px;
+        padding:   10px;
       }
                   
       html, body {
-        height: auto%;
+        height: auto;
         margin: auto;
       }
       
@@ -124,39 +124,12 @@ a:hover {
 
 form{
   
-  padding: auto;
-  margin: auto;
+  max: width 10px;;
+  margin: 0 10px ;
 
 }
-
-                       
-/*
-.IdInv,.Fecha, .Areaservicio, .Cedula, .Nombre, .Apellidos{
-  text-align:center;
-  width: auto;
 
   
-}
-
-
-.IdInv,.Fecha,.Areaservicio, .Fecha, .Cedula, .Nombre, .Apellidos label {
-  color: #085a91;
-
-
-align-items: 100px;
-
-}
-
-
-legend{
-    font-size: medium;
-}
-  
-fieldset{
-  border-color: #3e51be ;
-  
-}
-*/
 
 .LISTA{
   color: #300224;
