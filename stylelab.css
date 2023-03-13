@@ -1,0 +1,16 @@
+ul, ol{
+  list-style: none;
+}
+.nav li a{
+  background-color: #0a4974;
+  color:#fff;
+  text-decoration: none;
+  padding: 10px 15px ;
+  display:block;
+}
+.nav li a:hover{
+  background-color: #199797;
+}
+.nav >li{
+  float:left;
+}
