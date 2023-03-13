@@ -4,19 +4,19 @@
     
 
       header {
-        background-color:#e3edf1;
-        padding: 20px;
+       
+        padding:   0 10px;
       }
                   
-      /*html, body {
-        height: 100%;
-        margin: 0;
-      }*/
+      html, body {
+        height: auto%;
+        margin: auto;
+      }
       
       
       h3{
           text-align: center;
-          color: #040472;
+          color: #724f04;
           border: 2px;
           margin: auto;
       }
@@ -104,14 +104,15 @@ li {
 
 a {
   display: inline-block;
-  padding: 1px;
+  padding: 10px;
+  margin: 2px;
   border-radius: 10px;
   background-color:#e0e8eccc;
   color: #e0ebec;
   text-decoration:none;
   transition: background-color 0.1s ease-in-out;
   text-shadow: 2px 2px 5px grey;
-  box-shadow: 2px 2px grey ;
+  box-shadow: 2px 2px #470230 ;
   font-size: 1.3em;
 }
 
@@ -122,10 +123,9 @@ a:hover {
 
 
 form{
-  text-align:center;
-  background-color: #f3f6f7;
-  padding: 10px;
-  margin: 10px;
+  
+  padding: auto;
+  margin: auto;
 
 }
 
@@ -158,18 +158,16 @@ fieldset{
 }
 */
 
-.LISTA, .LISTA3, .LISTA5{
-  background-color:rgb(231, 234, 240);
+.LISTA{
+  color: #300224;
   text-align: center;
-  padding: 10PX;
+  
+  padding: auto;
  
 }
-
-.LISTA2{
-  background-color:rgb(133, 153, 192);
+.Obsev{
+  color: #0f2fe4;
   text-align: center;
-  padding: 10PX;
-  text-align: justify;
-
- 
+  padding: 25px 10px;
 }
+

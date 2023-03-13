@@ -11,15 +11,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.min.js"></script>
     <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">-->
 </head>
-<body>
-    <header>
-        <h2>Aplicativos</h2>
 
-    <a href="https://rutaalmar.com" target="_blank">
-    <img src="Imagenes/logo ruta.png" width="80px" height="80px" title="Hacer click para visitar la pagina"></a>
-    </header>
-    
-    
+<header>
+
+    <h2>Aplicativos</h2>
+
+<a href="https://rutaalmar.com" target="_blank">
+<img src="Imagenes/logo ruta.png" width="80px" height="80px" title="Hacer click para visitar la pagina"></a>
+
+</header>
+<br/>
+
+
+<body>
+    <br/>
+    <br/>
+        
    <nav>
     <ul>
      <li><a href="index.html">Inicio</a></li>
@@ -57,11 +64,15 @@
             <!--<label for="IdInv">IDForm:</label>
              <input type="text" class="Encabezado" id="IdInv" name="IdInv"readonly="true" value="1"/>-->
 
+             <div class="LISTA">
+
+            
+
              <label for="Fecha">FECHA:</label>
-             <input type="date" class="Encabezado" id="Fecha" name="id" placeholder="Fecha" required="true"/>
+             <input type="date" class="LISTA" id="Fecha" name="id" placeholder="Fecha" required="true"/>
 
              <label for="Areaservicio">AREA DE SERVICIO</label>
-             <select id="Areaservicio" class="Encabezado"name="Areaservicio">
+             <select id="Areaservicio" class="LISTA"name="Areaservicio">
              <option value="Mata de cana"> Mata de Caña</option>
              <option value="Manguitos">Manguitos</option>
              <option value="SanOnofre">San Onofre</option>
@@ -69,16 +80,16 @@
              </select>
 
              <label for="Cedula">NUMERO DE CEDULA:</label>
-             <input  type="number" required="true"  class="Cedula"id="Cedula" name="Cedula"  placeholder="tu Numero de cedula" />
+             <input  type="number" required="true"  class="LISTA"id="Cedula" name="Cedula"  placeholder="tu Numero de cedula" />
 
              <label for="Nombre">NOMBRE:</label>
-             <input type="text" class="Nombre"id="Nombre" name="Nombre" placeholder="Escribe tu Nombre" required="true"/>
+             <input type="text" class="LISTA"id="Nombre" name="Nombre" placeholder="Escribe tu Nombre" required="true"/>
     
  
              <label for="Apellidos">APELLIDOS:</label>
-             <input type="text" class="Apellidos"id="Apellidos" name="Apellido" placeholder="Escribe tu Apellidos" required="true"/>
+             <input type="text" class="LISTA"id="Apellidos" name="Apellido" placeholder="Escribe tu Apellidos" required="true"/>
 
-
+            </div>
 
 
 
@@ -349,8 +360,7 @@
     <!-- aqui vamos a crear un comentario u observaciones al final del formulario -->
     <div class="Obsev">
      <label for="comentario">Observaciones:</label>
-     <textarea id="Comentario" row="3"name="Comentario" required="true" rows="2" cols="50"
-     > 
+     <textarea id="Comentario" row="3"name="Comentario" required="true" rows="2" cols="50"> 
      </textarea>
     </div>
      <br/>
