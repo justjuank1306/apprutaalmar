@@ -6,7 +6,7 @@ html{
 body {
     margin: 0;
     padding: 1px;
-    background-color: #f1f7fc;
+    background-color: #f2f6f8;
     
   }
   
@@ -19,7 +19,7 @@ body {
   @media screen and (min-width: 769px) {
     /* Modifica el estilo de elementos específicos en pantallas más grandes */
   }
-}
+
 @import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
 
      /* a:link{
@@ -64,11 +64,11 @@ body {
 
           
   header {
-    /*position:relative;*/
-    /*height: 180px;*/
-   /* overflow: hidden;*/
+    /*position:relative;
+    height: 180px;
+    overflow: hidden;*/
     background-color:#ffffff;
-    padding: 50px;
+    padding: 20px;
     border: 1px;
     color: rgb(216, 103, 10);
 
@@ -82,7 +82,7 @@ body {
     
   }
     
- /* video {
+  video {
     position: absolute;
     top: 70%;
     left: 50%;
@@ -95,16 +95,40 @@ body {
 
   li {
     margin: 0 10px;
+  }
+
+
+ /* a {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 8px;
+    background-color:transparent;
+    color: #eef2f3;
+    text-decoration:none;
+    transition: background-color 0.3s ease-in-out;
+    text-shadow: 2px 2px 5px rgb(4, 1, 27);
+    box-shadow: 1px 1px grey ;
+    font-size: 1.3em;
   }*/
 
-  
+  hr {
+    border-top: 1px solid #010513;
+    margin: 1px 0;
+    box-shadow: 0px 3px 3px rgba(3, 42, 75, 0.99);
+    
     
   
-  
+  }
+
+  /*a:hover {
+    background-color: #d6daddcc;
+  }*/
 
 
-  
-  
+  header i .boton:hover{
+    background-image: none;
+    
+  }
 
    footer {
     padding: auto;
@@ -167,17 +191,16 @@ h3{
 
 .nav-enlace{
   display: inline-block;
-  background:transparent;
-  color: #f5f4f8;
+  color: #ffffff;
   padding: 10px 30px;
   border-radius: 3px;
   text-decoration: none;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
- font-size: x-large;
+  font-size: larger;
+ 
 }
 .nav-enlace:hover{
-  background: #01091b;
-
+  background: #2c4377;
   
 }
 
@@ -196,11 +219,12 @@ nav{
   background: #01213f;
   color: #d6c1c6;
   padding: 10px 0px;
-  border: 1px solid #f7f2e9;
+  border: 1px solid #7a530a;
   display: none;
   border-radius: 5px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   box-shadow: 2px 2px 5px grey;
+  font-size: larger;
 
 }
 @media (max-width:600px) {
@@ -211,7 +235,13 @@ nav{
   }
   .nav-enlace{
     margin: 10px 0px;
+    background-color: rgb(164, 212, 240);
+    box-shadow: 2px 2px 5px grey;
+    border: 1px solid #7a530a;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
   }
+ 
   .nav-boton{
     display: inline-block;
 
@@ -268,5 +298,4 @@ nav{
       width: 100%;
       margin-bottom: 20px;
   }
-  
-  
+}
