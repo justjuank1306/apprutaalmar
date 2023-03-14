@@ -14,27 +14,48 @@
      <script src="ubicacion.js"></script>-->
 </head>
 
+<div class="cabecera">
+<header>
+    
+  <i class="material-icons">room</i><div id="ubicacion"></div>
+  <br/>
+      <!--<video src="video/header.mp4" autoplay loop muted></video>-->
+      <!--<a href="https://rutaalmar.com" target="_blank">-->
+      <img src="Imagenes/logo ruta.png" width="90px" height="99px" style="title="Quieres ir a www.rutaalmar.com?"></a>
 
+     
+         <img src="Imagenes/menucir.png" class="menuapps"></a>
+      
+  </header>
+</div>
+ <hr/>
 
 <body>
-   <header>
-    
-    <i class="material-icons">room</i><div id="ubicacion"></div>
-    <br/>
-        <!--<video src="video/header.mp4" autoplay loop muted></video>-->
-        <!--<a href="https://rutaalmar.com" target="_blank">-->
-        <img src="Imagenes/logo ruta.png" width="90px" height="99px" style="title="Quieres ir a www.rutaalmar.com?"></a>
-    </header>
    
+<br/>
+<br/>
+<nav>
+  <button class="nav-boton" onclick="accion()">Menú</button>
+         <a href="index.html" class="nav-enlace desaparece" >Inicio</a>
+         <a href="contacto.html"class="nav-enlace desaparece">Contacto</a>
+         <a href="indexpeajes.html"class="nav-enlace desaparece">Peajes</a>
+         <a href="Indexcco.html"class="nav-enlace desaparece">C.Control</a>
+         <a href="Indexcco.html"class="nav-enlace desaparece">Sst</a>
+         <a href="Indexcco.html"class="nav-enlace desaparece">Soporte</a>
+         <a href="Indexcco.html"class="nav-enlace desaparece">Its</a>
 
-       <ul class="menu">
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-          <li><a href="indexpeajes.html">Peajes</a></li>
-          <li><a href="Indexcco.html">CentroControl</a></li>
-        </ul>
-
+</nav>
         
+<script>
+  function accion(){
+ var ancla= document.getElementsByClassName("nav-enlace");
+ for (var i=0; i < ancla.length; i++){
+ancla[i].classList.toggle("desaparece");
+ }
+
+
+  }
+</script>
     <script>
         if (navigator.geolocation) {
           navigator.geolocation.getCurrentPosition(function(position) {
@@ -108,6 +129,10 @@
     <div class="container">
         <p>&copy; 2023 Concesion Ruta al Mar s.a.s Todos los derechos reservados.</p>
     </div>
+</footer>
+
+<footer>
+  
 </footer>
 
 </html>
