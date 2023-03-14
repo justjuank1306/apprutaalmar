@@ -216,7 +216,7 @@ nav{
 }
 
 .nav-boton{
-  background: #01213f;
+  background: #043a9e;
   color: #d6c1c6;
   padding: 10px 0px;
   border: 1px solid #7a530a;
@@ -235,7 +235,7 @@ nav{
   }
   .nav-enlace{
     margin: 10px 0px;
-    background-color: rgb(164, 212, 240);
+    background-color: #01213f;
     box-shadow: 2px 2px 5px grey;
     border: 1px solid #7a530a;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -278,7 +278,7 @@ nav{
   .columna {
     background: transparent;
     color: #053ae6;
-    border: 1px solid transparent;
+    border: 1px solid grey;
     margin: 0px auto;
     padding: 10px;
     border-radius: 5px;
