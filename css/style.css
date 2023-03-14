@@ -140,7 +140,7 @@ body {
   }
 
  
-  .container {
+  /*.container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -156,11 +156,14 @@ body {
     
     
     
-  }
+  }*/
 
   
   p {
     text-align: center;
+    color: #120449;
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 
   
