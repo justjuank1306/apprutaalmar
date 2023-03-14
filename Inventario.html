@@ -7,7 +7,7 @@
     <!--<title>MenuPeajes</title>-->
     <title>Aplicativos</title>
     <link rel="icon" type="image/x-icon" href="/Imagenes/faviconruta/favicon.ico">
-    <link rel="stylesheet" href="stylemenu.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.min.js"></script>
     <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">-->
 </head>
@@ -28,23 +28,87 @@
     <br/>
         
    <nav>
-    <ul>
+   <!-- <ul>
      <li><a href="index.html">Inicio</a></li>
-     <!--<li><a href="Inventario.html">Inventario</a>-->
-     <!--<li><a href="cco">cco</a>-->
+     <li><a href="Inventario.html">Inventario</a>
+     <li><a href="cco">cco</a>
         <ul>
-            <!--<li><a href="Inventario.html">Preoperacional</a></li>
+            <li><a href="Inventario.html">Preoperacional</a></li>
             <li><a href="Asistencia.html">Asistencia</a></li>
             <li><a href="Cajafuerte.html">Cajafuerte</a></li>
             <li><a href="Combustible.html">Combustible</a></li>
             <li><a href="Consignaciones.html">Consignaciones</a></li>
             <li><a href="MtoEquipoEst.html">MtoEquipoEst</a></li>
             <li><a href="Novedades.html">Novedades</a></li>
-            <li><a href="Recambio.html">Recambio</a></li>-->
+            <li><a href="Recambio.html">Recambio</a></li>
          </ul>
     </li>
     <li><a href="Indexcco.html">Cco</a></li>
-    </ul>
+    </ul>-->
+
+    <button class="nav-boton" onclick="accion()">Menú</button>
+    <a href="index.html" class="nav-enlace desaparece" >Inicio</a>
+    <a href="contacto.html"class="nav-enlace desaparece">Contacto</a>
+    <a href="indexpeajes.html"class="nav-enlace desaparece">Peajes</a>
+    <a href="Indexcco.html"class="nav-enlace desaparece">Cco</a>
+    <a href="Indexcco.html"class="nav-enlace desaparece">Sst</a>
+    <a href="Indexcco.html"class="nav-enlace desaparece">Soporte</a>
+    <a href="Indexcco.html"class="nav-enlace desaparece">Its</a>
+
+</nav>
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+<!--<section class="container flex text-center">
+  
+  <div class="columna">
+    <h2>PEAJES</h2>
+    <a href="indexpeajes.html" target="_blank"></a>
+  <img src="Imagenes/qr1.png" width="300px" height="300px"/>
+  </div>
+  <div class="columna">
+    <h2>CCO</h2>
+    
+    <img src="Imagenes/qr2.png"width="300px" height="300px"/>
+  </div>
+  <div class="columna">
+    <h2>SST</h2>
+    
+    <img src="Imagenes/qr3.png" width="300px" height="300px"/>
+  </div>
+  
+</section>-->
+
+
+
+<script>
+  function accion(){
+ var ancla= document.getElementsByClassName("nav-enlace");
+ for (var i=0; i < ancla.length; i++){
+ancla[i].classList.toggle("desaparece");
+ }
+
+
+  }
+</script>
+    <script>
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(function(position) {
+            var ubicacion = document.getElementById("ubicacion");
+            ubicacion.innerHTML = "Latitud: " + position.coords.latitude + ", Longitud: " + position.coords.longitude;
+          });
+        } else {
+          alert("La geolocalización no es soportada por este navegador.");
+        }
+      </script>
+
+
+
+
+
    </nav>
    <br/>
    <!--<div class="container">-->
@@ -55,7 +119,7 @@
     <!--el fieldset es para marco del formulario-->
 
      <fieldset>
-         <legend  >INVETARIO DE HERRRAMIENTAS </legend>
+         <legend  >INVENTARIO DE HERRRAMIENTAS </legend>
          <br/>
          <br/>
               
@@ -65,7 +129,6 @@
              <input type="text" class="Encabezado" id="IdInv" name="IdInv"readonly="true" value="1"/>-->
 
              <div class="LISTA">
-                
              <label for="Fecha">FECHA:</label>
              <input type="date" class="LISTA" id="Fecha" name="id" placeholder="Fecha" required="true"/>
 
