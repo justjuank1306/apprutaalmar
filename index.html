@@ -6,18 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Aplicativos</title>
+  
+
      <link rel="icon" type="image/x-icon" href="/Imagenes/faviconruta/favicon.ico">
      <link rel="stylesheet" href="css/style.css"/>
      <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">-->
      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+
+     
      <!--llamar un j.s
      <script src="ubicacion.js"></script>-->
 </head>
 
 <div class="cabecera">
 <header>
-    
-  <i class="material-icons">room</i><div id="ubicacion"></div>
+  
+  <img src="Imagenes/gps1.png" width="35px" height="35px"/><div id="ubicacion"></div>
+  <!--<i class="material-icons">room</i><div id="ubicacion"></div>-->
   <br/>
       <!--<video src="video/header.mp4" autoplay loop muted></video>-->
       <!--<a href="https://rutaalmar.com" target="_blank">-->
@@ -86,6 +91,7 @@ ancla[i].classList.toggle("desaparece");
             var ubicacion = document.getElementById("ubicacion");
             ubicacion.innerHTML = "Latitud: " + position.coords.latitude + ", Longitud: " + position.coords.longitude;
           });
+
         } else {
           alert("La geolocalización no es soportada por este navegador.");
         }
