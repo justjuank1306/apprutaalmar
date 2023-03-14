@@ -64,9 +64,9 @@ body {
 
           
   header {
-    position:relative;
-    height: 180px;
-    overflow: hidden;
+    /*position:relative;*/
+    /*height: 180px;*/
+   /* overflow: hidden;*/
     background-color:#ffffff;
     padding: 50px;
     border: 1px;
@@ -82,7 +82,7 @@ body {
     
   }
     
-  video {
+ /* video {
     position: absolute;
     top: 70%;
     left: 50%;
@@ -95,40 +95,16 @@ body {
 
   li {
     margin: 0 10px;
-  }
-
-
- /* a {
-    display: inline-block;
-    padding: 10px;
-    border-radius: 8px;
-    background-color:transparent;
-    color: #eef2f3;
-    text-decoration:none;
-    transition: background-color 0.3s ease-in-out;
-    text-shadow: 2px 2px 5px rgb(4, 1, 27);
-    box-shadow: 1px 1px grey ;
-    font-size: 1.3em;
   }*/
 
-  hr {
-    border-top: 1px solid #010513;
-    margin: 1px 0;
-    box-shadow: 0px 3px 3px rgba(3, 42, 75, 0.99);
-    
+  
     
   
-  }
-
-  /*a:hover {
-    background-color: #d6daddcc;
-  }*/
+  
 
 
-  header i .boton:hover{
-    background-image: none;
-    
-  }
+  
+  
 
    footer {
     padding: auto;
