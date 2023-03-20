@@ -8,6 +8,7 @@ body {
     padding: 1px;
     background-color: #f2f6f8;
     
+    
   }
   
   /* Estilos para dispositivos móviles */
@@ -214,6 +215,8 @@ nav{
   display: flex;
   justify-content: space-around;
   border-radius: 3px;
+  box-shadow: 2px 2px 5px grey;
+
  
 
 
