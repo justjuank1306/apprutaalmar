@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AplicativosPeajes</title>
+        <link rel="icon" type="image/x-icon" href="/Imagenes/faviconruta/favicon.ico">
+        <link rel="stylesheet" href="css/style.css"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    </head>
+    <div class="cabecera">
+        <header>
+          
+          <img src="Imagenes/gps1.png" width="35px" height="35px"/><div id="ubicacion"></div>
+         
+          <br/>
+              <img src="Imagenes/logo ruta.png" width="150px" height="170px"/>
+              <img src="Imagenes/menucir.png" class="menuapps"></a>
+              
+          </header>
+        </div>
+    
+    
+    <body>
+    
+        <br/>
+    <br/>
+    <nav>
+      <button class="nav-boton" onclick="accion()">Menú</button>
+             <a href="Indexpeajes.html" class="nav-enlace desaparece" >Peajes</a>
+             <a href="contacto.html"class="nav-enlace desaparece">Contacto</a>
+          
+             <a href="Novedades.html"class="nav-enlace desaparece">Novedades</a>
+             
+    </nav>
+      
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <section class="container flex text-center">
+      
+      <div class="columna">
+        <h2>Asistencia</h2>
+      <img src="Imagenes/qr1.png" width="300px" height="300px"/>
+      </div>
+      <div class="columna">
+        <h2>Arqueo</h2>
+        
+        <img src="Imagenes/qr2.png"width="300px" height="300px"/>
+      </div>
+      <div class="columna">
+        <h2>CajaFuerte</h2>
+        
+        <img src="Imagenes/qr3.png" width="300px" height="300px"/>
+      </div>
+      
+    </section>
+    
+    <script>
+      function accion(){
+     var ancla= document.getElementsByClassName("nav-enlace");
+     for (var i=0; i < ancla.length; i++){
+    ancla[i].classList.toggle("desaparece");
+     }
+    
+    
+      }
+    </script>
+        <script>
+            if (navigator.geolocation) {
+              navigator.geolocation.getCurrentPosition(function(position) {
+                var ubicacion = document.getElementById("ubicacion");
+                ubicacion.innerHTML = "Latitud: " + position.coords.latitude + ", Longitud: " + position.coords.longitude;
+              });
+    
+            } else {
+              alert("La geolocalización no es soportada por este navegador.");
+            }
+          </script>
+       </body>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+            <p>&copy; 2023 Concesion Ruta al Mar s.a.s Todos los derechos reservados.</p>
+    </html>

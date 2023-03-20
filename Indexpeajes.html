@@ -4,34 +4,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--<title>MenuPeajes</title>-->
-    <title>Aplicativos_Peajes_Ruta_al_Mar</title>
+    <title>AplicativosPeajes</title>
     <link rel="icon" type="image/x-icon" href="/Imagenes/faviconruta/favicon.ico">
-    <link rel="stylesheet" href="stylemenu.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
 </head>
-<body>
-    <h2>Aplicativos</h2>
-    <a href="https://rutaalmar.com" target="_blank">
-        <img src="Imagenes/logo ruta.png" width="80px" height="80px" title="Hacer click para visitar la pagina"></a>
-    
-   <div id="header">
-    <ul class="nav">
-     <li><a href="index.html">Inicio</a></li>
-     <li><a href="Apps">Apps</a>
-        <ul>
-            <li><a href="Arqueo.html">Arqueo</a></li>
-            <li><a href="Asistencia.html">Asistencia</a></li>
-            <li><a href="Cajafuerte.html">Cajafuerte</a></li>
-            <li><a href="Combustible.html">Combustible</a></li>
-            <li><a href="Consignaciones.html">Consignaciones</a></li>
-            <li><a href="MtoEquipoEst.html">MtoEquipoEst</a></li>
-            <li><a href="Novedades.html">Novedades</a></li>
-            <li><a href="Recambio.html">Recambio</a></li>
-         </ul>
-    </li>
-    </ul>
-   </div>
+<div class="cabecera">
+    <header>
+      
+      <img src="Imagenes/gps1.png" width="35px" height="35px"/><div id="ubicacion"></div>
+     
+      <br/>
+          <img src="Imagenes/logo ruta.png" width="150px" height="170px"/>
+          <img src="Imagenes/menucir.png" class="menuapps"></a>
+          
+      </header>
+    </div>
 
-   
-</body>
+
+<body>
+
+    <br/>
+<br/>
+<nav>
+  <button class="nav-boton" onclick="accion()">Menú</button>
+         <a href="index.html" class="nav-enlace desaparece" >Inicio</a>
+         <a href="contacto.html"class="nav-enlace desaparece">Contacto</a>
+         <a href="Arqueo.html"class="nav-enlace desaparece">Arqueo</a>
+         <a href="Asistencia.html"class="nav-enlace desaparece">Asistencia</a>
+         <a href="Cajafuerte.html"class="nav-enlace desaparece">Cajafuerte</a>
+         <a href="Combustible.html"class="nav-enlace desaparece">Combustible</a>
+         <a href="Consignaciones.html"class="nav-enlace desaparece">Consignaciones</a>
+         <a href="MtoEquipoEst.html"class="nav-enlace desaparece">MtoEquipoEst</a>
+         <a href="Novedades.html"class="nav-enlace desaparece">Novedades</a>
+                  
+</nav>
+  
+<br/>
+<br/>
+<br/>
+<br/>
+<section class="container flex text-center">
+  
+  <div class="columna">
+    <h2>Arqueo</h2>
+  <img src="Imagenes/qr1.png" width="300px" height="300px"/>
+  </div>
+
+  <!--<div class="columna">
+    <h2>Arqueo</h2>
+    
+    <img src="Imagenes/qr2.png"width="300px" height="300px"/>
+  </div>
+
+  <div class="columna">
+    <h2>CajaFuerte</h2>
+    
+    <img src="Imagenes/qr3.png" width="300px" height="300px"/>
+  </div>-->
+  
+</section>
+
+<script>
+  function accion(){
+ var ancla= document.getElementsByClassName("nav-enlace");
+ for (var i=0; i < ancla.length; i++){
+ancla[i].classList.toggle("desaparece");
+ }
+
+
+  }
+</script>
+    <script>
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(function(position) {
+            var ubicacion = document.getElementById("ubicacion");
+            ubicacion.innerHTML = "Latitud: " + position.coords.latitude + ", Longitud: " + position.coords.longitude;
+          });
+
+        } else {
+          alert("La geolocalización no es soportada por este navegador.");
+        }
+      </script>
+   </body>
+<br/>
+<br/>
+<br/>
+<br/>
+        <p>&copy; 2023 Concesion Ruta al Mar s.a.s Todos los derechos reservados.</p>
 </html>
