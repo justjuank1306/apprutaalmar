@@ -12,7 +12,7 @@ body {
   }
   
   /* Estilos para dispositivos móviles */
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
     /* Modifica el estilo de elementos específicos en dispositivos móviles */
   }
   
